@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Шапка страницы -->
+<header>
+    <h1>HTML Input Guide: Тег &lt;input&gt;</h1>
+    <p>Этот учебный сайт поможет вам разобраться в основах создания полей ввода для ваших веб-форм.</p>
+</header>
+
+<hr>
+
+<!-- Раздел с описанием -->
+<section>
+    <h2>Что такое Input?</h2>
+    <p>Тег <code>;input</code> используется для создания интерактивных элементов управления в веб-формах для приема данных от пользователя. Это один из самых мощных и гибких тегов в HTML, так как его поведение полностью зависит от атрибута <code>type</code>.</p>
+</section>
+
+<hr>
+
+<!-- Раздел с примерами типов ввода -->
+<section>
+    <h2>Примеры различных типов ввода</h2>
+    <form>
+        <p><strong>Текстовое поле (text):</strong></p>
+        <input type="text" placeholder="Введите любой текст">
+
+        <p><strong>Электронная почта (email):</strong></p>
+        <input type="email" placeholder="example@mail.com">
+
+        <p><strong>Пароль (password):</strong></p>
+        <input type="password" placeholder="Ваш скрытый пароль">
+
+        <p><strong>Число (number):</strong></p>
+        <input type="number" value="17">
+
+        <p><strong>Дата (date):</strong></p>
+        <input type="date">
+
+        <p><strong>Чекбокс (checkbox):</strong></p>
+        <label>
+            <input type="checkbox"> Я согласен с условиями
+        </label>
+
+        <p><strong>Радиокнопки (radio):</strong></p>
+        <label>
+            <input type="radio" name="option_example"> Вариант А
+        </label><br>
+        <label>
+            <input type="radio" name="option_example"> Вариант Б
+        </label>
+    </form>
+</section>
+
+<hr>
+
+<!-- Практическая форма регистрации -->
+<section>
+    <h2>Практическая форма регистрации</h2>
+    <form action="#" method="post">
+        <p>
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" id="name" name="name" placeholder="Иван Иванов">
+        </p>
+
+        <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" placeholder="ivan@school.edu">
+        </p>
+
+        <p>
+            <label for="password">Придумайте пароль:</label><br>
+            <input type="password" id="password" name="password">
+        </p>
+
+        <p>
+            <label for="age">Ваш возраст:</label><br>
+            <input type="number" id="age" name="age">
+        </p>
+
+        <p>Ваш пол:</p>
+        <label>
+            <input type="radio" name="gender" value="male"> Мужской
+        </label>
+        <label>
+            <input type="radio" name="gender" value="female"> Женский
+        </label>
+
+        <p>
+            <label>
+                <input type="checkbox" name="agree"> Я подтверждаю правильность введенных данных
+            </label>
+        </p>
+
+        <p>
+            <button type="submit">Отправить данные</button>
+        </p>
+    </form>
+</section>
+
+<hr>
+
+<!-- Подвал страницы -->
+<footer>
+    <p>Учебный проект по HTML.</p>
+    <p>&copy; 2024 Web Fundamentals. Built for educational purposes using semantic HTML.</p>
+</footer>
+</body>
+</html>
